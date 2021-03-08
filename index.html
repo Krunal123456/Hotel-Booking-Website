@@ -1,5 +1,6 @@
 <html>
 <head>
+    <meta charset="UTF-8">
     <title>Index</title>
     <link rel="stylesheet" href="styles\common.css">
     <link rel="stylesheet" href="styles\index.css">
@@ -13,21 +14,41 @@
         <a href="F:\repo\Hotel-Booking-Website\login.html" target="_self" class="loginStyle">Login</a>
         <br/>
     </header>
-        <div style="overflow-y: scroll; width: 100%;  overflow: hidden; position: absolute; height: 750px;">
-            <div id="inputCity">
-                <input id="searchBar" type="text"  placeholder="City" name="City" id="City" autocomplete="off"/></div>
-            <br/>
-            <div style="margin-left: 15%; margin-right: 15%; text-align: center;">
-            <a href="F:\repo\Hotel-Booking-Website\list.html" target="_self">
-            <img class="indeximages" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg"/>
-        </a>
 
+        <div style="flex-direction: column;   height: 700px; display: flex;">
+            <div id="inputCity">
+                <input id="searchBar" type="text"  placeholder="City" name="City" id="City" autocomplete="off"/>
+            </div>
+            <br/>
+            <div class="Content">
+                <div class="cityimages">
+            <div class="container" style="display:flex; justify-content:space-evenly; ">
+              
+            <div class="container1">
+            <a href="list.html" target="_self" style=" text-decoration: none;">
+            <img class="indeximages" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg"/>
+            <div class="text1Sty">Delhi</div> </a></div>
+
+            <div class="container2">
+            <a  style=" text-decoration: none;" target="_self">
             <img class="indeximages" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg"/>
+            <div class="text2Sty" >Goa</div>  </a></div>
+
+            <div class="container3">
+            <a href="list.html" style=" text-decoration: none;" target="_self"></a>
             <img class="indeximages" src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg"/>
+            <div class="text3Sty" >Hyderabad</div>  </a></div>
+
+         <div class="container4">
+            <a href="list.html" style=" text-decoration: none;" target="_self"></a>
             <img class="indeximages" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg"/>
-            <a href="#" target="_self" style="text-decoration: none;">
+            <div class="text4Sty">Kolkata</div>   </a> </div>
+        </div></div></div>
+        </br> </br> </br>
+            
+            <a href="#" target="_self" style="display:flex; justify-content:center; text-decoration: none;">
                 <p style="text-align: center;margin: auto;color: black;">View more>></p></a>
-        </div>
+            
     </div>
 
         <footer>

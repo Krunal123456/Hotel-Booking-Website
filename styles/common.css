@@ -3,8 +3,10 @@ body,html{
     width: 100%;
     margin: 0%;
     background-color: #e0e0e0;
+    font-family: 'Ubuntu',sans-serif;
 }
 header{
+    display: flex;
     background-color: rosybrown;
     position: fixed;
     width: 100%;
@@ -13,16 +15,19 @@ header{
     
 }
 footer{
+    display: flex;
     background-color: rosybrown;
     position: fixed;
     width: 100%;
     bottom: 0;
+    height: 60px;
+    align-items: center;
 }
 
 .loginStyle{
   right: 0%;
   margin-top: 20px;
-  margin-right: 1%;
+  margin-right: 2%;
   text-decoration: none;
   position: absolute;
   color: black;
@@ -31,33 +36,34 @@ footer{
 .logo{
     height:60px;
     width:60px;
-    margin: auto;
+   margin-left: 1%;
 }
 
 .SocialMediaImage{
     height: 20px;
     width: 22px;
     text-decoration: none;
+
     
 }
 
 .iconsty{
     position: absolute;
     right:1%;
-    align-items: center;
     bottom:32%;
+    margin-right: 2%;
 
 }
 .contactStyle{
     bottom:32%;
-    margin-left: 1%;
+    margin-left: 2%;
     text-decoration: none;
     position: absolute;
-    text-align: center;
     color: black;
 }
 
 .copyrightSty{
     font-size: 10px;
     text-align: center;
+    margin: auto;
 }

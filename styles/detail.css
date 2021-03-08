@@ -1,4 +1,4 @@
-.Image{
+/*.Image{
     height: 500px;
     width: 500px;
     margin: 2% 4% 0% 4%;
@@ -9,4 +9,47 @@ form{
 #description{
     margin: 1% 4% 2% 4%;
     
+}*/
+
+.mainDiv{
+    
+    display: flex; 
+    margin: 8%; 
+    height: 400px;
+    justify-content: center;
+}
+
+.imgDiv{
+
+    display: flex; 
+    flex-grow: 3; 
+    justify-content: center; 
+    align-items: center;
+    border: 1px solid black
+}
+
+.formDiv{
+
+ flex-grow: 1; 
+ padding: 20px; 
+ border-left: 0px; 
+ border-top: 1px;
+ border-right: 1px; 
+ border-bottom: 1px; 
+ border-style: solid;
+ border-color: black;
+
+}
+
+.listSty{
+    display: flex; 
+    padding: 1em;
+}
+
+.labelSty{
+   flex:1;
+}
+
+.inputSty{
+   width:60%;
 }

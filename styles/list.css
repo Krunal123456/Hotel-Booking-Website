@@ -11,9 +11,10 @@
    } 
    .imagesView{
     margin: 2%;
-    background-color: rgb(132,136,139); 
+    background-color: lightgray; 
     width: 40%;
     float: left;
+    display: flex;
  }  
 
 

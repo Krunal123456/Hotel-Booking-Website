@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <title>Detail</title>
     <link rel="stylesheet" href="styles\common.css">
     <link rel="stylesheet" href="styles\detail.css">
@@ -9,43 +10,63 @@
 </head>
 
 <body>
-    <div id="container">
+    <div>
         <header>
             <a href="F:\repo\Hotel-Booking-Website\index.html" target="_self">
             <img src="F:\repo\Hotel-Booking-Website\assests\images\logo.png" alt="logo" class="logo" />
         </a>
             <a href="F:\repo\Hotel-Booking-Website\login.html" target="_self" class="loginStyle">Login</a>
         <br/></header>
+
         <div>
-            <img style="height: 500px; width: 500px; margin-top: 7%; margin-left: 4%; margin-right: 4%;" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" class="Image"><br/>
-            <form style="margin-left: 4%; margin-right: 4%; margin-bottom: 1%;" action="F:\repo\Hotel-Booking-Website\payment.html" method="GET" target="_self" >
-                <label for="adult">Adults:</label>
-                <input type="number" id="adult" name="adult" min="1" required autocomplete="off" value="1"><br/>
+            <div class="mainDiv">
+        
+            <div class="imgDiv">
+                <!-- margin-top: 7%; margin-left: 4%; margin-right: 4%;-->
+            <img style="height: 350px; width: 500px;" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" class="Image"><br/>
+            </div>
 
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required autocomplete="off"><br/>
+            <div class="formDiv">
+                <!--margin-left: 4%; margin-right: 4%; margin-bottom: 1%;-->
+            <form style="display:flex; justify-content:space-around; flex-direction: column;" action="payment.html" method="GET" target="_self" autocomplete="off" >
+                
+                
+                <ul style="list-style-type: none;">
+                <li class="listSty">
+                <label class="labelSty" for="adult">Adults:</label>
+                <input class="inputSty" type="number" id="adult" name="adult" min="1" required autocomplete="off" value="1"><br/></li>
 
-                <label for="date1">From Date:</label>
-                <input type="date" id="date1" name="date1" required autocomplete="off"/><br/>
+                <li class="listSty" >
+                <label class="labelSty" for="name">Name:</label>
+                <input class="inputSty" type="text" id="name" name="name" required autocomplete="off"><br/></li>
 
-                <label for="date2">To Date:</label>
-                <input type="date" name="date2" id="date2" required autocomplete="off" /><br/>
+                <li class="listSty" >
+                <label class="labelSty" for="date1">From Date:</label>
+                <input class="inputSty" type="date" id="date1" name="date1" required autocomplete="off"/><br/></li>
 
-                <label for="price">Total:</label>
-                <input type="text" name="price" id="price" autocomplete="off" readonly/><br/>
+                <li class="listSty" >
+                <label class="labelSty" for="date2">To Date:</label>
+                <input class="inputSty" type="date" name="date2" id="date2" required autocomplete="off" /><br/></li>
 
-                <a href="F:\repo\Hotel-Booking-Website\payment.html" target="_self">
-                    <button id="bookNow">Book Now</button> </a>
+                <li class="listSty" >
+                <label class="labelSty" for="price">Total:</label>
+                <input class="inputSty" type="text" name="price" id="price" autocomplete="off" readonly/><br/></li>
+
+                <li style="display: flex; padding: 1em; justify-content: center;">
+                <a href="payment.html" target="_self">
+                <button style="padding:10px" id="bookNow">Book Now</button> </a></li></ul>
             </form>
+            </div>
+            </div>
 
-            <div style="margin-left: 4%; margin-right: 4%; margin-top: 1%; margin-bottom: 7%;">
+            <div style="margin-left: 4%; margin-right: 4%; margin-top: -4%; margin-bottom: 7%;">
             <h2>Radisson Blu Hotel</h2>
-            <span>  
-                RATING </br></br>
+            <span style="font-family:cursive;">  
+                <b>RATING</b> </br></br>
                 5 Star </br></br>
               </span> 
     
-                AMENITIES
+              <span style="font-family:cursive;"> <b>AMENITIES </b></span>
            <ul>
                <li>Room Service</li>
                <li>Restaurant</li>
@@ -54,7 +75,7 @@
                <li>Pool</li>
            </ul>
            <div style="margin-bottom: 5%; position: absolute; padding-bottom: 6%;">
-           <h5 >DESCRIPTION</h5>
+           <b style="font-family:cursive;" >DESCRIPTION</b>
            <p>Lorem ipsum dolor sit amet consectetur adipising elit. Deleniti, illum totam magni volupatibus libero delectus nesciunt hie vel! Aperiam esse asperiores culpa, natus quam quis eum ex doloremque doloribus architecto!</p>
         </div>
         </div>
