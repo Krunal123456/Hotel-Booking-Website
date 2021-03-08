@@ -1,8 +1,12 @@
-body,html,div {
-    height: 100%;
-    width: 100%;
-    margin-top: 0%;
-    margin-bottom: 0%;
-    margin-left: 0%;
-    margin-bottom: 0%;
+.Image{
+    height: 500px;
+    width: 500px;
+    margin: 2% 4% 0% 4%;
+}
+form{
+    margin: 0% 4% 1% 4%;
+}
+#description{
+    margin: 1% 4% 2% 4%;
+    
 }

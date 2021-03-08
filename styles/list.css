@@ -1,8 +1,30 @@
-body,html,div {
-    height: 100%;
-    width: 100%;
-    margin-top: 0%;
-    margin-bottom: 0%;
-    margin-left: 0%;
-    margin-bottom: 0%;
+.Image{
+    height:200px;
+    width:250px;
+}
+#list-view{
+    scroll-behavior: smooth;
+  }
+  #map-view{
+    scroll-behavior: smooth;
+    display: none;
+   } 
+   .imagesView{
+    margin: 2%;
+    background-color: rgb(132,136,139); 
+    width: 40%;
+    float: left;
+ }  
+
+
+.viewsty{
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+
+}
+
+h3,p{
+    text-decoration: none;
+    color: black;
 }

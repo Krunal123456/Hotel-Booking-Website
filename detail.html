@@ -1,109 +1,80 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>
+<head>
+    <title>Detail</title>
+    <link rel="stylesheet" href="styles\common.css">
+    <link rel="stylesheet" href="styles\detail.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 
-        </title>
-    </head>
-    <style>
-         body{
-            background-color: #e0e0e0;
-        }
-        header{
-            background-color: rosybrown;
-        }
-        footer{
-            background-color: rosybrown;
-        }
-        img{
-            margin-top: 2%;
-            margin-left: 4%;
-            margin-bottom: 0%;
-            margin-right: 4%;
-        }
-        #form{
-            margin-top: 0%;
-            margin-bottom:1% ;
-            margin-left:4% ;
-            margin-right: 4%;
-        }
-        #info{
-            margin-left: 4%;
-            margin-right: 4%;
-            margin-top: 1%;
-            margin-bottom: 2%;
-        }
+</head>
 
-
-
-
-    </style>
-    <body>
-        <div>
+<body>
+    <div id="container">
         <header>
-            <a> 
-                <a href="index.html"> <img id="img" style="width: 60px;height: 60px;" alt="logo" src="F:\Hotel_Booking_Website_Starter_Code\assests\images\logo.png"
-                    /></a>
-                    
-                    <a  href="login.html" target="_blanck">Login</a><br>
-                </header>
-                <div>
-    <img style="height: 500px;width: 500px;" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg">  
-    <form action="payment.html" >
-        
-        <div id="form">
-        <label for="Adults">Adults:</label>
-        <input type="number" id="Adults" name="Adults" min="1" required>
-        <br>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required autocomplete="off" >
-        <br>
-        <label for="date">From date:</label>
-        <input type="date" id="date" name="date" required>
-        <br>
-        <label for="date">To date:</label>
-        <input type="date" id="date" name="date" required>
-        <br>
-        <label for="Total">Total:</label>
-        <input  id="Total" name="total" disabled>
-        <br>
-        <button>Book Now</button>
-    </form>
-</div>
-<div id="info">
-    <h2>Radisson Blu Hotel</h2>
-    <div>RATING</div>
-    <br>
-    <div>5 Star</div>
-    <br>
-    <div>AMENITIES</div>
-    <ul>
-        <li>Room service</li>
-        <li>Restaurant</li>
-        <li>Business centre</li>
-        <li>Fitness centre</li>
-        <li>Pool</li>
-    </ul>
+            <a href="F:\repo\Hotel-Booking-Website\index.html" target="_self">
+            <img src="F:\repo\Hotel-Booking-Website\assests\images\logo.png" alt="logo" class="logo" />
+        </a>
+            <a href="F:\repo\Hotel-Booking-Website\login.html" target="_self" class="loginStyle">Login</a>
+        <br/></header>
+        <div>
+            <img style="height: 500px; width: 500px; margin-top: 7%; margin-left: 4%; margin-right: 4%;" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" class="Image"><br/>
+            <form style="margin-left: 4%; margin-right: 4%; margin-bottom: 1%;" action="F:\repo\Hotel-Booking-Website\payment.html" method="GET" target="_self" >
+                <label for="adult">Adults:</label>
+                <input type="number" id="adult" name="adult" min="1" required autocomplete="off" value="1"><br/>
 
-    <h5>DESCRIPTION</h5>
-    <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-         Reiciendis laboriosam odit voluptas, nostrum accusamus, 
-         tempore quam sequi consequuntur provident pariatur tenetur ab aspernatur!
-          Itaque sapiente in libero sed, adipisci officiis!</div>
-       <br>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required autocomplete="off"><br/>
+
+                <label for="date1">From Date:</label>
+                <input type="date" id="date1" name="date1" required autocomplete="off"/><br/>
+
+                <label for="date2">To Date:</label>
+                <input type="date" name="date2" id="date2" required autocomplete="off" /><br/>
+
+                <label for="price">Total:</label>
+                <input type="text" name="price" id="price" autocomplete="off" readonly/><br/>
+
+                <a href="F:\repo\Hotel-Booking-Website\payment.html" target="_self">
+                    <button id="bookNow">Book Now</button> </a>
+            </form>
+
+            <div style="margin-left: 4%; margin-right: 4%; margin-top: 1%; margin-bottom: 7%;">
+            <h2>Radisson Blu Hotel</h2>
+            <span>  
+                RATING </br></br>
+                5 Star </br></br>
+              </span> 
+    
+                AMENITIES
+           <ul>
+               <li>Room Service</li>
+               <li>Restaurant</li>
+               <li>Business center</li>
+               <li>Fitness center</li>
+               <li>Pool</li>
+           </ul>
+           <div style="margin-bottom: 5%; position: absolute; padding-bottom: 6%;">
+           <h5 >DESCRIPTION</h5>
+           <p>Lorem ipsum dolor sit amet consectetur adipising elit. Deleniti, illum totam magni volupatibus libero delectus nesciunt hie vel! Aperiam esse asperiores culpa, natus quam quis eum ex doloremque doloribus architecto!</p>
+        </div>
+        </div>
+        </div>
+        <footer>
+            <a href="F:\repo\Hotel-Booking-Website\contact.html" target="_self" class="contactStyle">Contact Us</a><br/>
+            <div class="iconsty">
+            <a href="https://www.facebook.com" target="_blank" style="text-decoration: none;">
+                <img class="SocialMediaImage" src="assests\images\facebook.png" alt="Facebook" /></a>
+            <a href="https://www.instagram.com" target="_blank" style="text-decoration: none;">
+                <img class="SocialMediaImage" src="assests/images/instagram.png" alt="Instagram"/>
+            </a>
+            <a href="https://twitter.com" target="_blank" style="text-decoration: none;">
+                <img  class="SocialMediaImage" src="assests/images/twitter.png" alt="Twitter "/>
+            </a></div><br/>
+            <p class="copyrightSty"> <span>&#169;</span>
+            2020 ROOM SEARCH PVT LTD</p>
+            
+        </footer>
     </div>
-</div>
-<footer >
-    <article>
-<a href="contact.html" target="_top">Contact Us</a><br>
-<a href="https://www.facebook.com" target="_blank"><img style="height: 20px;width: 22px;" src="F:\Hotel_Booking_Website_Starter_Code\assests\images\facebook.png"></a> 
-<a href="https://www.instagram.com" target="_blank"><img style="height: 20px;width: 22px;" src="F:\Hotel_Booking_Website_Starter_Code\assests\images\instagram.png"></a>
-<a href="https://twitter.com" target="_bank"><img style="height: 20px;width: 22px;" src="F:\Hotel_Booking_Website_Starter_Code\assests\images\twitter.png"></a>
-<br>
-<span>&#169; 2020 ROOM SEARCH PVT. LTD.</span>
-</article>   
-</footer>
-</div>
-
 </body>
+
 </html>

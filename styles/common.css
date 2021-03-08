@@ -1,0 +1,63 @@
+body,html{
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    background-color: #e0e0e0;
+}
+header{
+    background-color: rosybrown;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 80;
+    
+}
+footer{
+    background-color: rosybrown;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.loginStyle{
+  right: 0%;
+  margin-top: 20px;
+  margin-right: 1%;
+  text-decoration: none;
+  position: absolute;
+  color: black;
+}
+
+.logo{
+    height:60px;
+    width:60px;
+    margin: auto;
+}
+
+.SocialMediaImage{
+    height: 20px;
+    width: 22px;
+    text-decoration: none;
+    
+}
+
+.iconsty{
+    position: absolute;
+    right:1%;
+    align-items: center;
+    bottom:32%;
+
+}
+.contactStyle{
+    bottom:32%;
+    margin-left: 1%;
+    text-decoration: none;
+    position: absolute;
+    text-align: center;
+    color: black;
+}
+
+.copyrightSty{
+    font-size: 10px;
+    text-align: center;
+}

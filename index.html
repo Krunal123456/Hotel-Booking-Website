@@ -1,103 +1,52 @@
-<!DOCTYPE html>
 <html>
-    <head>
-        <title>
-        
+<head>
+    <title>Index</title>
+    <link rel="stylesheet" href="styles\common.css">
+    <link rel="stylesheet" href="styles\index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
 
-        </title>
-    
-    </head>
-    <style>
-        body{
-            background-color: #e0e0e0;
-        }
-        header{
-            background-color: rosybrown;
-        }
-        footer{
-            
-            position: fixed;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            background-color:rosybrown;
-        }
-        #city{
-            background-image: url(https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg);
-            height:380px;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        #images{
-            margin-left: 15%;
-            margin-right: 15%;
-        }
-
-    
-        #img1{
-            padding-left: 4%;
-            padding-top: 4%;
-            padding-bottom: 4%;
-            padding-right: 4%;
-            border-radius: 25%;
-        }
-        #img2{
-            padding-left: 4%;
-            padding-top: 4%;
-            padding-bottom: 4%;
-            padding-right: 4%;
-            border-radius: 25%;
-        }
-        #img3{
-            padding-left: 4%;
-            padding-top: 4%;
-            padding-bottom: 4%;
-            padding-right: 4%;
-            border-radius: 25%;
-        }
-        #img4{
-            padding-left: 4%;
-            padding-top: 4%;
-            padding-bottom: 4%;
-            padding-right: 4%;
-            border-radius: 25%;
-        }
-        
-
-
-    </style>
-    <body>
+<body>
     <div>
-    <header> 
-        <article>
-        <img id="img" alt="logo" style="width: 60px; height: 60px;" src="F:\Hotel_Booking_Website_Starter_Code\assests\images\logo.png"
-      />
-        <a  href="login.html" target="_top">Login</a><br>
-    </article>
+        <header>
+        <img src="F:\repo\Hotel-Booking-Website\assests\images\logo.png" alt="logo" class="logo" />
+        <a href="F:\repo\Hotel-Booking-Website\login.html" target="_self" class="loginStyle">Login</a>
+        <br/>
     </header>
-      <div id="city"><input type="text" placeholder="City"><br></div>
-      <div id="images">
-      <a  href="list.html" target="_top"><img id="img1" style="width: 150px;height: 150px;" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg"></a>  
-        <span><img id="img2" style="width: 150px; height: 150px;" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg"></span>
-        <span><img id="img3" style="width: 150px; height: 150px;" src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg"></span>
-        <span><img id="img4" style="width: 150px;height: 150px;" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg"></span>
+        <div style="overflow-y: scroll; width: 100%;  overflow: hidden; position: absolute; height: 750px;">
+            <div id="inputCity">
+                <input id="searchBar" type="text"  placeholder="City" name="City" id="City" autocomplete="off"/></div>
+            <br/>
+            <div style="margin-left: 15%; margin-right: 15%; text-align: center;">
+            <a href="F:\repo\Hotel-Booking-Website\list.html" target="_self">
+            <img class="indeximages" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg"/>
+        </a>
+
+            <img class="indeximages" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg"/>
+            <img class="indeximages" src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg"/>
+            <img class="indeximages" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg"/>
+            <a href="#" target="_self" style="text-decoration: none;">
+                <p style="text-align: center;margin: auto;color: black;">View more>></p></a>
+        </div>
     </div>
-        
-    <a href="#">View more>></a>
+
+        <footer>
+            <a href="F:\repo\Hotel-Booking-Website\contact.html" target="_self" class="contactStyle">Contact Us</a><br/>
+            <div class="iconsty">
+            <a href="https://www.facebook.com" target="_blank" style="text-decoration: none;">
+                <img class="SocialMediaImage" src="assests\images\facebook.png" alt="Facebook" /></a>
+            <a href="https://www.instagram.com" target="_blank" style="text-decoration: none;">
+                <img class="SocialMediaImage" src="assests/images/instagram.png" alt="Instagram"/>
+            </a>
+            <a href="https://twitter.com" target="_blank" style="text-decoration: none;">
+                <img  class="SocialMediaImage" src="assests/images/twitter.png" alt="Twitter "/>
+            </a></div><br/>
+            <p class="copyrightSty"> <span>&#169;</span>
+            2020 ROOM SEARCH PVT LTD</p>
+            
+        </footer>
     
-        <footer >      
-            <article>
-        <a href="contact.html" target="_top">Contact Us</a><br>
-        <a href="https://www.facebook.com" target="_blank"><img style="height: 20px;width: 22px;" src="F:\Hotel_Booking_Website_Starter_Code\assests\images\facebook.png"></a> 
-        <a href="https://www.instagram.com" target="_blank"><img style="height: 20px;width: 22px;" src="F:\Hotel_Booking_Website_Starter_Code\assests\images\instagram.png"></a>
-        <a href="https://twitter.com" target="_bank"><img style="height: 20px;width: 22px;" src="F:\Hotel_Booking_Website_Starter_Code\assests\images\twitter.png"></a>
-        <br>
-        <span>&#169; 2020 ROOM SEARCH PVT. LTD.</span>
-    </article>   
-    </footer>
-</div>
-        
-    </body>
+    </div>
+</body>
+
 </html>
