@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="styles\common.css">
     <link rel="stylesheet" href="styles\detail.css">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
 </head>
 
@@ -15,10 +18,11 @@
             <a href="F:\repo\Hotel-Booking-Website\index.html" target="_self">
             <img src="F:\repo\Hotel-Booking-Website\assests\images\logo.png" alt="logo" class="logo" />
         </a>
-            <a href="F:\repo\Hotel-Booking-Website\login.html" target="_self" class="loginStyle">Login</a>
-        <br/></header>
+        <span class="loginStyle">
+            <button  type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#login" id="login-button" style="padding: -0.625rem .75rem;">LOGIN</button>
+        </span><br/></header>
 
-        <div>
+        <div style="background-color:#e0e0e0 ; height: 100vh;">
             <div class="mainDiv">
         
             <div class="imgDiv">
@@ -54,7 +58,7 @@
 
                 <li style="display: flex; padding: 1em; justify-content: center;">
                 <a href="payment.html" target="_self">
-                <button style="padding:10px" id="bookNow">Book Now</button> </a></li></ul>
+                <button type="submit" class="btn btn-outline-success" style="padding:3px" id="bookNow">Book Now</button> </a></li></ul>
             </form>
             </div>
             </div>
@@ -75,13 +79,15 @@
                <li>Pool</li>
            </ul>
            <div style="margin-bottom: 5%; position: absolute; padding-bottom: 6%;">
-           <b style="font-family:cursive;" >DESCRIPTION</b>
+           <b style="font-family:cursive;">DESCRIPTION</b>
            <p>Lorem ipsum dolor sit amet consectetur adipising elit. Deleniti, illum totam magni volupatibus libero delectus nesciunt hie vel! Aperiam esse asperiores culpa, natus quam quis eum ex doloremque doloribus architecto!</p>
         </div>
         </div>
         </div>
         <footer>
-            <a href="F:\repo\Hotel-Booking-Website\contact.html" target="_self" class="contactStyle">Contact Us</a><br/>
+            <span class="contactStyle"><button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#example-modal-signup" id="sign-up-button" >Contact Us</button>
+            </span>
+            
             <div class="iconsty">
             <a href="https://www.facebook.com" target="_blank" style="text-decoration: none;">
                 <img class="SocialMediaImage" src="assests\images\facebook.png" alt="Facebook" /></a>
@@ -95,6 +101,65 @@
             2020 ROOM SEARCH PVT LTD</p>
             
         </footer>
+
+        <!--login-->
+        <div class="modal" tabindex="-1" role="dialog" id="login">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modal-header">Please Login</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body" style="margin-left: 7%;  margin-right: 7%;">
+                  <p style="display: flex; float: left;">
+                      <label style="margin-right: 25%;" for="name">Username:</label><br/>
+                      <input type="text" id="name" placeholder="Enter Username" required/>
+                  </p>
+                  <p style="display: flex; float: left;">
+                      <label style="margin-right: 25%;" for="example-input-password">Password:</label><br/>
+                      <input type="password" id="example-input-password" placeholder="Enter Password" required autocomplete="off"/>
+                  </p>
+                 
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary btn-sm" style="display: flex; margin: auto;">Login</button>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+  
+      
+          <!--contact modal-->
+          <div class="modal" tabindex="-1" role="dialog" id="example-modal-signup">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="modal-header">Get in touch</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                      <form>
+                          <p>Thank you for reaching out!!!<br/>
+                          Please enter you email and we will get back to you</p>
+                        <p style="display: flex; float: left;">
+                            <label for="email">Email:</label><br/>
+                            <input type="email" id="email" placeholder="Enter your email id" required/>
+                        </p>
+                       
+                      </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn-sm">Submit</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
     </div>
 </body>
 

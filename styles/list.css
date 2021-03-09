@@ -7,15 +7,18 @@
   }
   #map-view{
     scroll-behavior: smooth;
-    display: none;
+    
    } 
    .imagesView{
     margin: 2%;
     background-color: lightgray; 
-    width: 40%;
+    width: 43%;
     float: left;
     display: flex;
  }  
+ .imagesView:hover{
+    background-color: rosybrown;
+}
 
 
 .viewsty{
@@ -29,3 +32,15 @@ h3,p{
     text-decoration: none;
     color: black;
 }
+#navbar{
+    
+    position: relative;
+    top: 56%;
+    left: 41%;
+    transform: translate(-50%,-50%);
+}
+
+.container{
+    display: grid;
+   
+  }
