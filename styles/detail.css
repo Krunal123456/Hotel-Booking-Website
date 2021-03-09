@@ -14,7 +14,7 @@ form{
 .mainDiv{
     
     display: flex; 
-    margin: 8%; 
+    margin: 7% 4% 5% 4%; 
     height: 400px;
     justify-content: center;
 }
@@ -53,3 +53,27 @@ form{
 .inputSty{
    width:60%;
 }
+
+.prev-icon{
+ 
+    border-bottom: 6px solid;
+    border-left: 6px solid;
+    transform: rotate(45deg);
+    margin-left: -315%; 
+    color:rosybrown;
+    height: 33px;
+    width: 33px;
+    position: relative;
+ }
+ 
+ .next-icon{
+     
+     border-bottom: 6px solid;
+     border-left: 6px solid;
+     margin-right: -360%;
+     transform: rotate(-135deg);
+     color:rosybrown;
+     height: 33px;
+     width: 31px;
+ 
+ }

@@ -9,14 +9,22 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <style>
+      .checked {
+        color: orange;
+      }
+      </style>
 
 </head>
 
 <body>
     <div>
         <header>
-            <a href="F:\repo\Hotel-Booking-Website\index.html" target="_self">
-            <img src="F:\repo\Hotel-Booking-Website\assests\images\logo.png" alt="logo" class="logo" />
+            <a href="index.html" target="_self">
+            <img src="assests\images\logo.png" alt="logo" class="logo" />
         </a>
         <span class="loginStyle">
             <button  type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#login" id="login-button" style="padding: -0.625rem .75rem;">LOGIN</button>
@@ -27,8 +35,39 @@
         
             <div class="imgDiv">
                 <!-- margin-top: 7%; margin-left: 4%; margin-right: 4%;-->
-            <img style="height: 350px; width: 500px;" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" class="Image"><br/>
+            <!--<img style="height: 350px; width: 500px;" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" class="Image"><br/>
+            </div>-->
+
+            <div id="carouselExampleControls" class="carousel row" data-ride="carousel">
+              <div class="col-sm-1">
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="prev-icon" aria-hidden="true" style="background-size: 259% 500% !important; color: rosybrown !" ></span>
+                  
+                </a>
+              </div>
+              <div class="carousel-inner col-sm-10">
+                <div class="carousel-item active">
+                  <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" class="d-block" alt="..." height="320px" width="500px">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://media-cdn.tripadvisor.com/media/photo-o/01/fa/51/70/r-the-spa.jpg" class="d-block" alt="..." height="320px" width="500px">
+                </div>
+                <div class="carousel-item">
+                  <img src="https://media-cdn.tripadvisor.com/media/photo-w/0e/b2/64/3f/radisson-blu-plaza-delhi.jpg" class="d-block" alt="..." height="320px" width="500px">
+                </div>
+              </div>
+
+              
+              <div class="col-sm-1">
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next" >
+                  <span class="next-icon" aria-hidden="true" style="background-size: 259% 100% !important"></span>
+                </a>
+              </div>
+              
             </div>
+          
+          
+          </div>
 
             <div class="formDiv">
                 <!--margin-left: 4%; margin-right: 4%; margin-bottom: 1%;-->
@@ -66,11 +105,16 @@
             <div style="margin-left: 4%; margin-right: 4%; margin-top: -4%; margin-bottom: 7%;">
             <h2>Radisson Blu Hotel</h2>
             <span style="font-family:cursive;">  
-                <b>RATING</b> </br></br>
-                5 Star </br></br>
-              </span> 
+              <h5><b>RATING</b></h5>
+              <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+              
+            </span> </br> 
     
-              <span style="font-family:cursive;"> <b>AMENITIES </b></span>
+              <span style="font-family:cursive;"><h5><b>AMENITIES</b></h5>  </span>
            <ul>
                <li>Room Service</li>
                <li>Restaurant</li>
@@ -79,7 +123,7 @@
                <li>Pool</li>
            </ul>
            <div style="margin-bottom: 5%; position: absolute; padding-bottom: 6%;">
-           <b style="font-family:cursive;">DESCRIPTION</b>
+           <h5 style="font-family:cursive;" ><b>DESCRIPTION</b></h5>
            <p>Lorem ipsum dolor sit amet consectetur adipising elit. Deleniti, illum totam magni volupatibus libero delectus nesciunt hie vel! Aperiam esse asperiores culpa, natus quam quis eum ex doloremque doloribus architecto!</p>
         </div>
         </div>

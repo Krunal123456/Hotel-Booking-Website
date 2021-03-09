@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <style>
+      .checked {
+        color: orange;
+      }
+      </style>
 
 </head>
 
@@ -21,9 +29,9 @@
         </span><br/></header>
 
           
-        <div style="overflow:auto; height: 100%; background-color: #e0e0e0;" class="Content">
-          <div style="margin-left: 3%; margin-right: 5%;margin-top: 5%;  " id="container">
-            <div id="container">
+        <div style="overflow:auto; height: 110%; background-color: #e0e0e0;" class="Content">
+          <div style="margin-left: 3%; margin-right: 5%;margin-top: 6%;  " id="container">
+            <div id="container" style="margin-bottom: 2%;">
               <ul class="nav nav-pills" id="pills-tab" style="display: flex; justify-content: center; align-items: center;">
                 <li class="nav-item">
                     <a class="nav-link active" data-toggle="pill" href="#list">List view</a>
@@ -32,6 +40,8 @@
                     <a class="nav-link" data-toggle="pill" href="#map">Map View</a>
                 </li>
             </ul>
+          </div> 
+          
             <div class="tab-content" id="pills-tabContent">
 
 
@@ -43,7 +53,11 @@
       <div id="list-view" class="imagesView"> 
       <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" class="Image" /><br/>
       <span style="margin-left: 5%; color: black;"><h3>Radisson Blu Hotel</h3>
-      <p>5 Star
+      <p><span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked">
       </p>
       <p>New Delhi</p></span>
       </div>  </a>
@@ -52,7 +66,11 @@
   <div class="imagesView" style="margin-left: 7%;">
       <img src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" class="Image"/><br/>
       <span style="margin-left: 5%; color: black;"><h3>The Lalit New Delhi</h3>
-        <p>4.5 Star
+        <p><span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star-half-o checked"></span>
+          <span class="fa fa-star "></span>
         </p>
       <p>New Delhi</p></span>
   </div>
@@ -60,21 +78,28 @@
   <div class="imagesView" style="margin-bottom:7%">
       <img src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" class="Image"/><br/>
       <span style="margin-left: 5%; color: black;"><h3>Taj Palace</h3>
-        <p>4 Star
+        <p><span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star">
         </p>
       <p>New Delhi</p></span>
   </div>
 </div>
   <div id="map" class="tab-pane fade">
-      <span id="map-view">
+  <span id="map-view" >
   
-      <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png"/><br/>
-      
-      </span>   
+      <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" height="475px"/><br/>
+
+     
+</span> 
+<div>
+  MAP VIEW
+</div>  
 </div>
 </div>
-</div>
-          </div>
+    </div>
 
       
       </div>
