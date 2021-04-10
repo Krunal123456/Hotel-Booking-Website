@@ -1,142 +1,74 @@
 <!DOCTYPE html>
 <html>
-    <head>
-       <title>Payment</title>
-       <link href="styles/common.css" rel="stylesheet"/>
-       <link href="styles/payment.css" rel="stylesheet"/>
-       <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
-    </head>
+<head>
+  <title>Payment</title>
+  <link href=".\styles/common.css" rel="stylesheet" />
+  <link href=".\styles/payment.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
-    <body>
-      <div>
+<body>
+  <div>
 
-        <header>
-          <a href="index.html" target="_self">
-          <img class="logo" src="assests/images/logo.png" alt="logo"> </a>  
-          <span class="loginStyle">
-            <button  type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#login" id="login-button" style="padding: -0.625rem .75rem;">LOGIN</button>
-        </span><br/></header>
+    <header id="header">
+    </header>
 
-         <!--margin-bottom: 100px;-->
-         <div style=" background-color: #e0e0e0; height: 100vh;">
-         <div class="mainDiv" style="margin-bottom: 100px;">
-        
-          <!--background-color: rgb(132,136,139); width: 50%; height: 20%; margin: 7% auto-->
-          <div class="imgDiv" style=" width: 50%; height: 20%; margin-top: 10%; margin-left: auto; margin-right: auto;" >
-  
-          <img style="max-height: 300px; max-width: 270px;" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" />  
-          
-          <span style=" margin-left: 5%; display: flex; flex-direction: column; color: black; justify-content: center; "><h2>Radisson Blu Hotel</h2> 
-             
-            <p>#38 of 1,289 hotels in New Delhi</p> 
-            <span>National Highway 8, New Delhi 110017 India</span></span>
-           </div>
-           
-           <div class="descSty" style="margin-bottom: 10%; padding-bottom: 0%;">
-            <p id="marginDesc" style="margin-left: 10%;">
-            <b>Name:</b> John Doe </br></br>
-            <b>Number of Adults:</b> 2 </br></br>
-            <b>Check-in Date:</b> 06/06/2020 </br></br>
-            <b>Check-out Date:</b> 08/06/2020 </p> 
+    <!--margin-bottom: 100px;-->
+    <div style=" background-color: #e0e0e0; height: 100vh;" class="">
+      <div class="mainDiv">
 
-            
-       <!--<div style="margin-bottom: 5%; padding-bottom: 6%;">-->
-        <!--style="border: 1px solid black; border-radius: 5px; padding: 1% 2%; margin-left: 2%; margin-right: 2%; margin-top: 2%; margin-bottom:2%;"-->
-            <p  style="padding: 1% 2%; margin-left: 2%; margin-right: 2%; margin-top: 2%; margin-bottom:2%;"></br>
-            <b>Tariff Breakdown:</b> Rs.1000 &#10799; 2 Adults &#10799; 5 Nights </br></br>
-            <b>Total Amount:</b> Rs.10000 </p>
+        <!--background-color: rgb(132,136,139); width: 50%; height: 20%; margin: 7% auto-->
+        <div class="row imgDiv">
 
-            <a href="#" target="_self"  style="text-decoration: none; color: black; margin: auto;"><button type="button" class="btn btn-success" >Pay Now</button></a>
-            
-          
+          <img class="col-md-6 img"
+            src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" />
+
+          <div class="col-md-6 img-content" style="margin: auto;">
+            <h2>Radisson Blu Hotel</h2>
+            <p>#38 of 1,289 hotels in New Delhi</p>
+            <div class="text-justify row">National Highway 8, New Delhi 110017 India</div>
+          </div>
         </div>
-        
-       </div>
-    
-     <footer>
-      <span class="contactStyle"><button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#example-modal-signup" id="sign-up-button" >Contact Us</button>
-      </span>
-      
-      <div class="iconsty">
-      <a href="https://www.facebook.com" target="_blank" style="text-decoration: none;">
-          <img class="SocialMediaImage" src="assests\images\facebook.png" alt="Facebook" /></a>
-      <a href="https://www.instagram.com" target="_blank" style="text-decoration: none;">
-          <img class="SocialMediaImage" src="assests/images/instagram.png" alt="Instagram"/>
-      </a>
-      <a href="https://twitter.com" target="_blank" style="text-decoration: none;">
-          <img  class="SocialMediaImage" src="assests/images/twitter.png" alt="Twitter "/>
-      </a></div><br/>
-      <p class="copyrightSty"> <span>&#169;</span>
-      2020 ROOM SEARCH PVT LTD</p>
-    </div>
-      
-  </footer>
 
-  <!--login-->
-  <div class="modal" tabindex="-1" role="dialog" id="login">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modal-header">Please Login</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body" style="margin-left: 7%;  margin-right: 7%;">
-          <p style="display: flex; float: left;">
-              <label style="margin-right: 25%;" for="name">Username:</label><br/>
-              <input type="text" id="name" placeholder="Enter Username" required/>
-          </p>
-          <p style="display: flex; float: left;">
-              <label style="margin-right: 25%;" for="example-input-password">Password: </label><br/>
-              <input type="password" id="example-input-password" placeholder="Enter Password" required autocomplete="off"/>
-          </p>
-         
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary btn-sm" style="display: flex; margin: auto;">Login</button>
-         
+        <div class="descSty">
+          <div class="row no-gutters desc-content">
+            <div class="col-lg-4">
+              <p id="marginDesc">
+                <b>Name:</b> John Doe </br></br>
+                <b>Number of Adults:</b> 2 </br></br>
+                <b>Check-in Date:</b> 06/06/2020 </br></br>
+                <b>Check-out Date:</b> 08/06/2020
+              </p>
+            </div>
+
+            <!--<div style="margin-bottom: 5%; padding-bottom: 6%;">-->
+            <!--style="border: 1px solid black; border-radius: 5px; padding: 1% 2%; margin-left: 2%; margin-right: 2%; margin-top: 2%; margin-bottom:2%;"-->
+            <div class="col-lg-4 traif-content">
+              <p style="padding: 1% 2%;">
+                <b>Tariff Breakdown:</b> Rs.1000 &#10799; 2 Adults &#10799; 5 Nights </br></br>
+                <b>Total Amount:</b> Rs.10000
+              </p>
+            </div>
+            <div class="col-lg-4 details">
+              
+                <button id="payment" type="button" class="btn btn-sm btn-success" onclick="payNow()"  style="text-decoration: none; margin: auto;">Pay Now</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+    <footer id="footer">
+      <!--<a href="contact.html" target="_self" class="contactStyle">-->
+      </footer>
+      <script src="scripts/common.js"></script>
+      <script src="scripts/payment.js"></script>
   </div>
 
+</body>
 
-  <!--contact modal-->
-  <div class="modal" tabindex="-1" role="dialog" id="example-modal-signup">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modal-header">Get in touch</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-              <form>
-                  <p>Thank you for reaching out!!!<br/>
-                  Please enter you email and we will get back to you</p>
-                <p style="display: flex; float: left;">
-                    <label for="email">Email:</label><br/>
-                    <input type="email" id="email" placeholder="Enter your email id" required/>
-                </p>
-               
-              </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary btn-sm">Submit</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-     
-     </div>
-
-      </body>
-
-</html> 
+</html>

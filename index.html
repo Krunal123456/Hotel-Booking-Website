@@ -11,18 +11,19 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    #more {
+     display:none;
+     margin-top: 5%; 
+     justify-content: space-evenly; 
+   }
+   </style>
 
 </head>
 
 <body >
   <div>
-    <header>
-      <img src=".\assests\images\logo.png" alt="logo" class="logo" />
-      <!-- <a href="login.html" target="_self" class="loginStyle">-->
-      <span class="loginStyle">
-        <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#login" id="login-button"
-          style="padding: -0.625rem .75rem;">LOGIN</button>
-      </span><br />
+    <header id="header1">
     </header>
     <div style="background-color: #e0e0e0; height: 100%;">
       <div style="flex-direction: column;  display: flex;" class="mm">
@@ -32,9 +33,7 @@
         </div>
         <br />
 
-        <div class="Content">
-          <div class="cityimages">
-            <div class="row" style="display:flex; justify-content:space-evenly; ">
+            <div class="row" style="display:flex; justify-content:space-evenly; margin-top: 2%">
 
               <div class="container1 col-lg-3 col-md-6">
                 <a href="list.html" target="_self" style=" text-decoration: none;">
@@ -52,147 +51,63 @@
               </div>
 
               <div class="container1 col-lg-3 col-md-6">
-                <a href="list.html" style=" text-decoration: none;" target="_self"></a>
-                <img class="indeximages"
-                  src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" />
+                <a href="list.html" style=" text-decoration: none;" target="_self">
+                <img class="indeximages" src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" />
                 <div class="text3Sty">Hyderabad</div> </a>
               </div>
 
               <div class="container1 col-lg-3 col-md-6">
-                <a href="list.html" style=" text-decoration: none;" target="_self"></a>
-                <img class="indeximages"
-                  src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" />
+                <a href="list.html" style=" text-decoration: none;" target="_self">
+                <img class="indeximages" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" />
                 <div class="text4Sty">Kolkata</div> </a>
               </div>
             </div>
-          </div>
-        </div></br>
+          </br>
 
-        <div class="Content">
-          <div class="cityimages">
-            <div class="row" style="display:flex; justify-content:space-evenly; ">
-
-              <div class="container1 col-lg-3 col-md-6">
-                <a href="list.html" target="_self" style=" text-decoration: none;">
-                  <img class="indeximages"
-                    src="https://media-cdn.tripadvisor.com/media/photo-s/15/4d/46/b8/chennai-madras.jpg" />
-                  <div class="text5Sty">Chennai</div>
-                </a>
-              </div>
-
-              <div class="container1 col-lg-3 col-md-6">
-                <a href="list.html" style=" text-decoration: none;" target="_self">
-                  <img class="indeximages" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/fc/agra.jpg" />
-                  <div class="text6Sty">Agra</div>
-                </a>
-              </div>
-
-              <div class="container1 col-lg-3 col-md-6">
-                <a href="list.html" style=" text-decoration: none;" target="_self"></a>
-                <img class="indeximages"
-                  src="https://media-cdn.tripadvisor.com/media/photo-s/10/a3/3b/8a/screenshot-2017-09-12.jpg" />
-                <div class="text7Sty">Jaipur</div> </a>
-              </div>
-
-              <div class="container1 col-lg-3 col-md-6">
-                <a href="list.html" style=" text-decoration: none;" target="_self"></a>
-                <img class="indeximages"
-                  src="https://media-cdn.tripadvisor.com/media/photo-s/0c/d2/2f/7a/palace-from-the-outside.jpg" />
-                <div class="text8Sty">Bengaluru</div> </a>
-              </div>
-            </div>
-          </div>
+        <div id="more" class="row">  
+          <div class="container1 col-lg-3 col-md-6">
+          <a href="list.html" class="aStyle" target="_self" style=" text-decoration: none;">
+          <img class="indeximages" src="https://media-cdn.tripadvisor.com/media/photo-s/15/4d/46/b8/chennai-madras.jpg">  
+          <div class="text5Sty">Chennai</div></a>  </div>  
+           
+          <div class="container1 col-lg-3 col-md-6">
+          <a href="list.html" class="aStyle" target="_self" style=" text-decoration: none;">
+          <img class="indeximages" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/fc/agra.jpg"/> 
+          <div class="text6Sty">Agra</div>  </a></div>
+  
+          <div class="container1 col-lg-3 col-md-6" >
+          <a href="list.html" class="aStyle" target="_self" style=" text-decoration: none;">
+          <img class="indeximages" src="https://media-cdn.tripadvisor.com/media/photo-s/10/a3/3b/8a/screenshot-2017-09-12.jpg"/> 
+          <div class="text7Sty">Jaipur</div>  </a></div>
+            
+          <div class="container1 col-lg-3 col-md-6">
+          <a href="list.html" class="aStyle" target="_self" style=" text-decoration: none;">
+          <img class="indeximages" src="https://media-cdn.tripadvisor.com/media/photo-s/0c/d2/2f/7a/palace-from-the-outside.jpg"/>
+          <div class="text8Sty">Bengaluru</div>   </a> </div>
+  
         </div>
+
+        
+      </br> 
         
 
-        <div id="viewmore">
-          <a href="#" target="_self" style="display:flex; justify-content:center; text-decoration: none; ">
-            <button type="button" class="btn btn-secondary btn-sm" href="#" tabindex="-1" role="button"
-              aria-disabled="true">View more</button></a>
-        </div>
+        
+         
+            <button type="button" class="btn btn-secondary btn-sm"  id="vm"
+              aria-disabled="true" style="display:flex; justify-content:center; text-decoration: none; margin:auto;" onclick="viewFunction()">View more</button>
+        
       </div>
 
     </div>
 
-    <footer>
+    <footer id="footer">
       <!--<a href="contact.html" target="_self" class="contactStyle">-->
-      <span class="contactStyle"><button type="button" class="btn btn-info btn-sm" data-toggle="modal"
-          data-target="#example-modal-signup" id="sign-up-button">Contact Us</button>
-      </span>
-      <div class="iconsty">
-        <a href="https://www.facebook.com" target="_blank" style="text-decoration: none;">
-          <img class="SocialMediaImage" src="assests\images\facebook.png" alt="Facebook" /></a>
-        <a href="https://www.instagram.com" target="_blank" style="text-decoration: none;">
-          <img class="SocialMediaImage" src="assests/images/instagram.png" alt="Instagram" />
-        </a>
-        <a href="https://twitter.com" target="_blank" style="text-decoration: none;">
-          <img class="SocialMediaImage" src="assests/images/twitter.png" alt="Twitter " />
-        </a>
-      </div><br />
-      <p class="copyrightSty"> <span>&#169;</span>
-        2020 ROOM SEARCH PVT LTD</p>
+      </footer>
+      <script src="scripts/common.js"></script>
+      <script src="scripts/index.js"></script>
 
-    </footer>
+    
 
-
-    <!--login-->
-    <div class="modal" tabindex="-1" role="dialog" id="login">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modal-header">Please Login</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body" style="margin-left: 7%;  margin-right: 7%;">
-            <p style="display: flex; float: left;">
-              <label style="margin-right: 25%;" for="name">Username:</label><br />
-              <input type="text" id="name" placeholder="Enter Username" required />
-            </p>
-            <p style="display: flex; float: left;">
-              <label style="margin-right: 25%;" for="example-input-password">Password:</label><br />
-              <input type="password" id="example-input-password" placeholder="Enter Password" required
-                autocomplete="off" />
-            </p>
-
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary btn-sm" style="display: flex; margin: auto;">Login</button>
-
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <!--contact modal-->
-    <div class="modal" tabindex="-1" role="dialog" id="example-modal-signup">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modal-header">Get in touch</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <p>Thank you for reaching out!!!<br />
-                Please enter you email and we will get back to you</p>
-              <p style="display: flex; float: left;">
-                <label for="email">Email:</label><br />
-                <input type="email" id="email" placeholder="Enter your email id" required />
-              </p>
-
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary btn-sm">Submit</button>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 </body>
 

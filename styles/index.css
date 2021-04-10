@@ -95,7 +95,7 @@
 .text7Sty{
   position: relative;
   bottom: 45%;
-  left:20%;
+  left:26%;
   color: #f1f1f1;
   visibility: hidden;
 }
@@ -103,7 +103,7 @@
 .text8Sty{
   position: relative;
   bottom: 45%;
-  left:15%;
+  left:18%;
   color: #f1f1f1;
   visibility: hidden;
 }
@@ -132,9 +132,7 @@
     border-radius: 12px; 
     text-align: start;
 }
-#viewmore{
-  text-align: center;
-}
+
 
 .mm{
   padding-bottom: 20%;
